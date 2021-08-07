@@ -1,0 +1,212 @@
+{% load render_partial  %}
+{% load static %}
+{% render_partial 'header' %}
+      <!-- Page Content-->
+      <main class="page-content">
+         <!-- Swiper variant 3-->
+         <section class="bg-gray-darker">
+            <div class="swiper-variant-1">
+               <div data-slide-effect="fade" data-min-height="600px" class="swiper-container swiper-slider">
+                  <div class="swiper-wrapper">
+                     <div data-slide-bg="images/home-slide-1-1920x800.jpg" class="swiper-slide">
+                        <div class="swiper-slide-caption text-center">
+                           <div class="shell">
+                              <div class="range range-sm-middle">
+                                 <div class="cell-sm-6 cell-md-5 cell-lg-4 text-uppercase">
+                                    <div class="group-md">
+                                       <div data-caption-animate="fadeInLeftSm" data-caption-delay="200" class="label-swiper h4 text-white"><span>جدید</span></div>
+                                       <h1 data-caption-animate="fadeInRightSm" data-caption-delay="100" class="text-white offset-top-0">پیتزا</h1>
+                                    </div>
+                                    <h3 data-caption-animate="fadeInUpSmall" data-caption-delay="600" class="text-primary-lighter">با غذای دریایی</h3><a href="#" data-caption-animate="fadeInUpSmall" data-caption-delay="800" class="btn btn-burnt-sienna btn-md btn-shape-circle offset-top-20">سفارش آنلاین</a>
+                                 </div>
+                                 <div class="cell-sm-6 cell-md-7 cell-lg-8 text-lg-right veil reveal-sm-inline-block">
+                                    <div style="position:relative;z-index:2;">
+                                       <div data-caption-animate="fadeInLeftSm" data-caption-delay="1500"><img src="{% static 'images/slide-caption-image-6-100x118.png' %}" alt="" width="100" height="118" class="img-caption-5 img-responsive veil reveal-lg-inline-block">
+                                       </div>
+                                       <div data-caption-animate="fadeInRotate" data-caption-delay="100"><img src="{% static 'images/slide-caption-image-1-599x596.png' %}" alt="" width="599" height="596" class="img-responsive reveal-inline-block">
+                                       </div>
+                                    </div>
+                                    <div data-caption-animate="fadeInRightSm" data-caption-delay="600" class="img-caption-1"><img src="{% static 'images/slide-caption-image-2-346x336.png' %}" alt="" width="346" height="336" class="img-responsive veil reveal-lg-inline-block">
+                                    </div>
+                                    <div data-caption-animate="fadeInRightSm" data-caption-delay="900" class="img-caption-2"><img src="{% static 'images/slide-caption-image-3-228x310.png' %}" alt="" width="228" height="310" class=" img-responsive veil reveal-lg-inline-block">
+                                    </div>
+                                    <div data-caption-animate="fadeInLeftSm" data-caption-delay="800" class="img-caption-3"><img src="{% static 'images/slide-caption-image-4-179x213.png' %}" alt="" width="179" height="213" class=" img-responsive veil reveal-lg-inline-block">
+                                    </div>
+                                    <div data-caption-animate="fadeInLeftSm" data-caption-delay="1000" class="img-caption-4"><img src="{% static 'images/slide-caption-image-5-522x343.png' %}" alt="" width="522" height="343" class="img-responsive veil reveal-lg-inline-block">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div data-slide-bg="images/home-slide-2-1920x800.jpg" class="swiper-slide">
+                        <div class="swiper-slide-caption slide-caption-2 text-center">
+                           <div class="shell">
+                              <div class="range range-sm-middle">
+                                 <div class="cell-sm-6 cell-md-5 cell-lg-4">
+                                    <h5 data-caption-animate="fadeInUpSmall" data-caption-delay="100" class="font-secondary text-white">مخصوص سرآشپز</h5>
+                                    <h2 data-caption-animate="fadeInUpSmall" data-caption-delay="400" class="text-uppercase text-white offset-top-0">غذای</h2>
+                                    <h1 data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-0">افسانه‌ای</h1>
+                                    <h4 data-caption-animate="fadeInUpSmall" data-caption-delay="1000" class="text-primary-lighter offset-top-20">برگر کالیفرنیا</h4>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div data-slide-bg="images/home-slide-3-1920x800.jpg" class="swiper-slide">
+                        <div class="swiper-slide-caption text-uppercase text-center">
+                           <div class="shell">
+                              <div class="range range-sm-middle">
+                                 <div class="cell-sm-6 cell-md-5 cell-lg-4">
+                                    <div data-caption-animate="fadeInUpSmall" data-caption-delay="100" class="label-swiper label-swiper-var-2">
+                                       <h4>غذاهای داغ</h4>
+                                    </div>
+                                    <h1 data-caption-animate="fadeInUpSmall" data-caption-delay="400" class="text-white">برگر</h1>
+                                    <h3 data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-primary-lighter offset-top-0">مکزیکی</h3>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Swiper Navigation-->
+                  <div class="swiper-pagination-wrap">
+                     <div class="shell">
+                        <div class="range">
+                           <div class="cell-sm-6 cell-md-5 cell-lg-4">
+                              <div class="swiper-pagination"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="section-50 section-sm-100">
+            <div class="shell-wide">
+               <div class="range range-xs-center">
+                  <div class="cell-sm-6 cell-md-4 view-animate zoomInSmall delay-04"><a href="menu-single.html" class="thumbnail-variant-3"><img src="{% static 'images/index-01-566x401.jpg' %}" alt="" width="566" height="401" class="img-responsive">
+                     <div class="caption text-center">
+                        <h3>برای گیاهخواران</h3>
+                        <p class="big">لورم ایپسوم متن ساختگی با تولید</p>
+                     </div></a></div>
+                  <div class="cell-sm-6 cell-md-4 view-animate zoomInSmall delay-06"><a href="menu-single.html" class="thumbnail-variant-3"><img src="{% static 'images/index-02-566x401.jpg' %}" alt="" width="566" height="401" class="img-responsive">
+                     <div class="caption text-center">
+                        <h3>سفارش آنلاین</h3>
+                        <p class="big">لورم ایپسوم متن ساختگی با تولید</p>
+                     </div></a></div>
+                  <div class="cell-sm-6 cell-md-4 offset-sm-top-30 offset-md-top-0 view-animate zoomInSmall delay-02"><a href="menu-single.html" class="thumbnail-variant-3"><img src="{% static 'images/index-03-566x401.jpg' %}" alt="" width="566" height="401" class="img-responsive">
+                     <div class="caption text-center">
+                        <h3>کیک های مخصوص</h3>
+                        <p class="big">لورم ایپسوم متن ساختگی با</p>
+                     </div></a></div>
+               </div>
+            </div>
+         </section>
+{#          {% render_partial 'products_componenet' %}#}
+         <!--banner-->
+         <section class="bg-image-5">
+            <!-- RD Parallax-->
+            <div data-on="false" data-md-on="true" class="rd-parallax rd-parallax-light">
+               <div data-speed="0.35" data-type="media" data-url="images/parallax-03.png" class="rd-parallax-layer"></div>
+               <div data-speed="0" data-type="html" class="rd-parallax-layer">
+                  <div class="shell section-80 section-sm-top-140 section-sm-bottom-150 text-center">
+                     <div class="range range-xs-center">
+                        <div class="cell-sm-10 cell-lg-6">
+                           <h4 class="divider-custom-small-primary">ارسال رایگان</h4>
+                           <h2 class="text-uppercase offset-top-10 offset-sm-top-0">روز ساندویچ</h2>
+                           <div class="label-price offset-top-10">
+                              <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+                                 <div class="unit-left">
+                                    <h1 class="text-primary">17<sup class="h3 text-primary">000</sup></h1>
+                                 </div>
+                                 <div class="unit-body">
+                                    <ul class="big text-left">
+                                       <li>ساندویچ</li>
+                                       <li>سالاد</li>
+                                       <li>نوشیدنی</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div><a href="menu-classic.html" class="btn btn-burnt-sienna btn-md btn-shape-circle offset-top-15">سفارش آنلاین</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--services-->
+         <section class="section-50 section-sm-130">
+            <div class="shell">
+               <div class="range range-xs-center">
+                  <div class="cell-sm-6 cell-md-3 view-animate fadeInUpBigger delay-04">
+                     <!-- Box icon-->
+                     <article class="box-icon box-icon-variant-1">
+                        <div class="icon-wrap"><span class="icon icon-lg text-base thin-icon-time icon-xl"></span></div>
+                        <div class="box-icon-header">
+                           <h5>ارسال سریع</h5>
+                        </div>
+                        <hr class="divider-xs bg-primary">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از</p>
+                     </article>
+                  </div>
+                  <div class="cell-sm-6 cell-md-3 offset-top-50 offset-sm-top-0 view-animate fadeInUpBigger delay-08">
+                     <!-- Box icon-->
+                     <article class="box-icon box-icon-variant-1">
+                        <div class="icon-wrap"><span class="icon icon-lg text-base restaurant-icon-17 icon-xxl"></span></div>
+                        <div class="box-icon-header">
+                           <h5>غذای تازه</h5>
+                        </div>
+                        <hr class="divider-xs bg-primary">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</p>
+                     </article>
+                  </div>
+                  <div class="cell-sm-6 cell-md-3 offset-top-50 offset-md-top-0 view-animate fadeInUpBigger delay-04">
+                     <!-- Box icon-->
+                     <article class="box-icon box-icon-variant-1">
+                        <div class="icon-wrap"><span class="icon icon-lg text-base restaurant-icon-23 icon-xxl"></span></div>
+                        <div class="box-icon-header">
+                           <h5>آشپزهای ماهر</h5>
+                        </div>
+                        <hr class="divider-xs bg-primary">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</p>
+                     </article>
+                  </div>
+                  <div class="cell-sm-6 cell-md-3 offset-top-50 offset-md-top-0 view-animate fadeInUpBigger delay-06">
+                     <!-- Box icon-->
+                     <article class="box-icon box-icon-variant-1">
+                        <div class="icon-wrap"><span class="icon icon-lg text-base restaurant-icon-22 icon-xxl"></span></div>
+                        <div class="box-icon-header">
+                           <h5>انواع ظروف</h5>
+                        </div>
+                        <hr class="divider-xs bg-primary">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از</p>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--section gallery-->
+         <section>
+            <div data-photo-swipe-gallery="gallery" class="range range-condensed">
+               <div class="cell-xs-6 cell-md-3"><a data-photo-swipe-item="" data-size="1200x800" href="images/index-gallery-1-1200x800_original.jpg" data-author="" class="thumbnail-gallery"><img src="{% static 'images/index-gallery-1-480x394.jpg' %}" alt="" width="480" height="394"></a></div>
+               <div class="cell-xs-6 cell-md-3"><a data-photo-swipe-item="" data-size="1200x800" href="images/index-gallery-2-1200x800_original.jpg" class="thumbnail-gallery"><img src="{% static 'images/index-gallery-2-480x394.jpg' %}" alt="" width="480" height="394"></a></div>
+               <div class="cell-xs-6 cell-md-3"><a data-photo-swipe-item="" data-size="1200x800" href="images/index-gallery-3-1200x800_original.jpg" class="thumbnail-gallery"><img src="{% static 'images/index-gallery-3-480x394.jpg' %}" alt="" width="480" height="394"></a></div>
+               <div class="cell-xs-6 cell-md-3"><a data-photo-swipe-item="" data-size="1200x800" href="images/index-gallery-4-1200x800_original.jpg" class="thumbnail-gallery"><img src="{% static 'images/index-gallery-4-480x394.jpg' %}" alt="" width="480" height="394"></a></div>
+            </div>
+         </section>
+         <section class="google-map-section">
+            <!-- RD Google Map-->
+            <div data-zoom="15" data-y="38.068214" data-x="46.290377" data-styles="" class="rd-google-map rd-google-map__model">
+               <ul class="map_locations">
+                  <li data-y="38.068214" data-x="46.290377"></li>
+               </ul>
+            </div>
+         </section>
+      </main>
+      <!-- Page Footer -->
+        {% render_partial 'footer' %}
+
+</body>
+</html>

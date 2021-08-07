@@ -1,0 +1,112 @@
+{% load static %}
+<footer class="page-foot text-sm-left">
+         <section class="bg-gray-darker section-top-55 section-bottom-55">
+            <div class="shell">
+               <div class="range border-left-cell">
+                  <div class="cell-sm-6 cell-md-3 cell-lg-4 offset-sm-top-10"><a href="index.html" class="brand brand-inverse">
+                     <img src="{% static 'images/logo-light.png' %}"></a>
+                     <ul class="list-unstyled contact-info offset-top-15">
+                        <li>
+                           <div class="unit unit-horizontal unit-top unit-spacing-xxs">
+                              <div class="unit-left"><span class="text-white">آدرس:</span></div>
+                              <div class="unit-body text-left text-gray-light">
+                                 <p>تبریز، ولیعصر، جنب بانک ملت، پلاک 487</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="unit unit-horizontal unit-top unit-spacing-xxs">
+                              <div class="unit-left"><span class="text-white">ایمیل:</span></div>
+                              <div class="unit-body"><a href="mailto:#" class="link-gray-light">info@demolink.org</a></div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="cell-sm-6 cell-md-3 offset-top-50 offset-sm-top-0">
+                     <h4 class="text-uppercase">منوی غذای ما</h4>
+                     <ul class="list-tags offset-top-15 text-lh-2">
+                        <li class="text-gray-light"><a href="menu-single.html" class="link-gray-light">همبرگر</a></li>
+                        <li class="text-gray-light"><a href="menu-single.html" class="link-gray-light">پیتزا</a></li>
+                        <li class="text-gray-light"><a href="menu-single.html" class="link-gray-light">سرخ کردنی</a></li>
+                        <li class="text-gray-light"><a href="menu-single.html" class="link-gray-light">سالاد</a></li>
+                        <li class="text-gray-light"><a href="menu-single.html" class="link-gray-light">نوشیدنی</a></li>
+                        <li class="text-gray-light"><a href="menu-single.html" class="link-gray-light">دسر</a></li>
+                     </ul>
+                  </div>
+                  <div class="cell-sm-10 cell-lg-5 offset-top-50 offset-md-top-0 cell-md-6">
+                     <h4 class="text-uppercase">خبرنامه</h4>
+                     <div class="offset-top-20">
+                        <form data-form-output="form-output-global" data-form-type="subscribe" method="post" action="#" class="rd-mailform form-subscribe form-inline-flex-xs">
+                           <div class="form-group">
+                              <input placeholder="ایمیل شما" type="email" name="email" data-constraints="@Required @Email" class="form-control">
+                           </div>
+                           <button type="submit" class="btn btn-burnt-sienna btn-shape-circle">اشتراک</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section-20 bg-white">
+            <div class="shell">
+               <div class="range range-xs-center range-sm-justify">
+                  <div class="cell-sm-5 offset-top-26 text-md-left">
+                     <p class="copyright">
+                        ارائه شده در وب‌سایت <a href="https://www.rtl-theme.com" target="_blank">راست‌چین</a>
+                        <!-- {%FOOTER_LINK}-->
+                     </p>
+                  </div>
+                  <div class="cell-sm-4 offset-top-30 offset-sm-top-0 text-md-right">
+                     <ul class="list-inline list-inline-sizing-1">
+                        <li><a href="#" class="link-silver-light"><span class="icon icon-xs fa fa-instagram"></span></a></li>
+                        <li><a href="#" class="link-silver-light"><span class="icon icon-xs fa fa-facebook"></span></a></li>
+                        <li><a href="#" class="link-silver-light"><span class="icon icon-xs fa fa-twitter"></span></a></li>
+                        <li><a href="#" class="link-silver-light"><span class="icon icon-xs fa fa-telegram"></span></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+      </footer>
+   </div>
+   <!-- Global Mailform Output-->
+   <div id="form-output-global" class="snackbars"></div>
+   <!-- PhotoSwipe Gallery-->
+   <div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+         <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+         </div>
+         <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+               <div class="pswp__counter"></div>
+               <button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
+               <button title="Share" class="pswp__button pswp__button--share"></button>
+               <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+               <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+               <div class="pswp__preloader">
+                  <div class="pswp__preloader__icn">
+                     <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+               <div class="pswp__share-tooltip"></div>
+            </div>
+            <button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
+            <button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
+            <div class="pswp__caption">
+               <div class="pswp__caption__cent"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Java script-->
+   <script src="{% static 'js/core.min.js' %}"></script>
+   <script src="{% static 'js/script.js' %}"></script>
