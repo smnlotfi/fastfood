@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 from fastfood import settings
 from django.conf.urls.static import static
 from fastfood.views import home_page, Header,Footer
@@ -24,6 +24,7 @@ urlpatterns = [
 path('', home_page),
 path('header', Header, name="header"),
 path('footer', Footer, name="footer"),
+path('',include('account.urls'))
 ]
 
 

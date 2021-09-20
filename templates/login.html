@@ -1,0 +1,53 @@
+{% extends 'layouts/content_component.html' %}
+
+{% block content %}
+
+    <main class="page-content">
+			<!-- Breadcrumbs & Page title-->
+			<section class="text-center section-34 section-sm-60 section-md-top-100 section-md-bottom-105 bg-image bg-image-breadcrumbs">
+				<div class="shell shell-fluid">
+					<div class="range range-condensed">
+						<div class="cell-xs-12">
+							<p class="h3 text-white">ورود </p>
+							<ul class="breadcrumbs-custom offset-top-10">
+								<li><a href="index.html">خانه</a></li>
+								<li><a>صفحات</a></li>
+								<li class="active">ورود</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+                <div  id="success" class="alert alert-success hidden " role="alert">
+                </div>
+                <div   id="error" class="alert alert-danger hidden " role="alert">
+                </div>
+			<!-- Buttons-->
+			<section class="bg-white text-center section-50 section-sm-100">
+				<div class="shell">
+					<div class="range range-xs-center">
+						<div class="cell-sm-8 cell-lg-6">
+                            <form id="loginform" method="POST"  class="form-group">
+                                {% csrf_token %}
+                                {{ Form.mobile.label }}
+                                {{ Form.mobile }}
+                                {{ Form.smscode.label }}
+                                {{ Form.smscode }}
+                                {% for field in Form %}
+                                    {% for error in field.errors %}
+                                        <strong>{{ error }}</strong>
+                                    {% endfor %}
+
+                                {% endfor %}
+                                <br>
+                            <button id="submit" class="btn btn-success" type="submit">ارسال کد تایید به موبایل</button>
+                            </form>
+						</div>
+					</div>
+				</div>
+			</section>
+<h1 id="sub"></h1>
+		</main>
+
+{% endblock %}
